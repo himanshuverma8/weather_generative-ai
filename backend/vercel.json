@@ -11,10 +11,6 @@
       "src": "/api/(.*)",
       "dest": "/api/$1"
     }
-  ],
-  "env": {
-    "OPENWEATHER_API_KEY": "@openweather_api_key",
-    "GEMINI_API_KEY": "@gemini_api_key"
-  }
+  ]
 }
 
