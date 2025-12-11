@@ -4,7 +4,7 @@ import ChatMessage from './components/ChatMessage';
 import VoiceInput from './components/VoiceInput';
 import ThemeSelector from './components/ThemeSelector';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://weather-generative-ai-qskh.vercel.app/api';
 
 function App() {
   const [messages, setMessages] = useState([]);
