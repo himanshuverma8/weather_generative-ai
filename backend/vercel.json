@@ -6,11 +6,10 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
+  "rewrites": [
+    { "source": "/api/health", "destination": "/api/health.js" },
+    { "source": "/api/weather", "destination": "/api/weather.js" },
+    { "source": "/api/chat", "destination": "/api/chat.js" }
   ]
 }
 
