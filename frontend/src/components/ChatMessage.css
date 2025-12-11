@@ -1,0 +1,273 @@
+.message {
+  display: flex;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.ai-message {
+  justify-content: flex-start;
+}
+
+.message-content {
+  max-width: 85%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.user-message .message-content {
+  background: linear-gradient(135deg, var(--sakura-dark) 0%, var(--ume-purple) 100%);
+  color: white;
+  border-bottom-right-radius: 6px;
+}
+
+.ai-message .message-content {
+  background: white;
+  color: var(--sumi-black);
+  border: 1px solid var(--sakura-pink);
+  border-bottom-left-radius: 6px;
+}
+
+.ai-message.error .message-content {
+  background: #FFF0F0;
+  border-color: var(--vermillion);
+  color: var(--vermillion);
+}
+
+/* Message Header */
+.message-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.user-message .message-header {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.sender-avatar {
+  font-size: 1.3rem;
+}
+
+.sender-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.user-message .sender-name {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.ai-message .sender-name {
+  color: var(--sakura-dark);
+}
+
+.timestamp {
+  margin-left: auto;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Message Body */
+.message-body {
+  padding: 12px 16px 16px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.message-body p {
+  margin: 0 0 8px 0;
+}
+
+.message-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Text Response Styling */
+.text-response {
+  word-wrap: break-word;
+}
+
+.text-response .bullet-point {
+  padding-left: 1.5em;
+  position: relative;
+  margin: 8px 0;
+}
+
+.text-response .bullet-point::before {
+  content: '🌸';
+  position: absolute;
+  left: 0;
+  font-size: 0.8em;
+}
+
+.text-response .numbered-item {
+  margin: 8px 0;
+  padding-left: 0.5em;
+}
+
+/* Formatted Response Styling */
+.formatted-response {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.response-greeting {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--sakura-dark);
+  margin: 0;
+}
+
+.response-weather {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--sakura-light);
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+
+.weather-icon {
+  font-size: 1.5rem;
+}
+
+.response-main {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.response-recommendations {
+  margin-top: 8px;
+}
+
+.response-recommendations h4 {
+  font-size: 0.9rem;
+  color: var(--sakura-dark);
+  margin: 0 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--sakura-light);
+}
+
+.response-recommendations ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.response-recommendations li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  background: linear-gradient(135deg, var(--sakura-light) 0%, var(--kinari) 100%);
+  border-radius: 12px;
+  border-left: 3px solid var(--sakura-pink);
+}
+
+.rec-icon {
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.rec-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rec-content strong {
+  font-size: 0.9rem;
+  color: var(--indigo);
+}
+
+.rec-content span {
+  font-size: 0.85rem;
+  color: var(--indigo-light);
+  line-height: 1.6;
+}
+
+.response-tips {
+  background: var(--kinari);
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px dashed var(--gold);
+}
+
+.response-tips h4 {
+  font-size: 0.85rem;
+  color: var(--gold);
+  margin: 0 0 8px 0;
+}
+
+.response-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.response-tips li {
+  font-size: 0.85rem;
+  color: var(--indigo-light);
+  padding: 4px 0;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.response-tips li::before {
+  content: '✨';
+  position: absolute;
+  left: 0;
+  font-size: 0.7em;
+}
+
+.response-closing {
+  font-size: 0.9rem;
+  color: var(--sakura-dark);
+  font-style: italic;
+  margin: 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--sakura-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .message-content {
+    max-width: 90%;
+  }
+
+  .message-header {
+    padding: 10px 14px 6px;
+  }
+
+  .message-body {
+    padding: 10px 14px 14px;
+    font-size: 0.9rem;
+  }
+
+  .response-recommendations li {
+    padding: 10px;
+  }
+}

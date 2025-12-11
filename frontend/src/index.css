@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Japanese color palette */
+  --sakura-pink: #FFB7C5;
+  --sakura-light: #FFF0F3;
+  --sakura-dark: #C94C5C;
+  --indigo: #3F3D56;
+  --indigo-light: #5C5A77;
+  --vermillion: #E2421F;
+  --gold: #C9A227;
+  --matcha: #7BA23F;
+  --sumi-black: #1C1C1C;
+  --washi-white: #F8F5F0;
+  --kinari: #FBFBF9;
+  --ume-purple: #8B4C7F;
+  --sky-blue: #5B9BD5;
+  
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color-scheme: light;
+  background-color: var(--washi-white);
+  color: var(--sumi-black);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--washi-white);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Decorative sakura pattern background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(255, 183, 197, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 90% 80%, rgba(255, 183, 197, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(201, 162, 39, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Japanese-style scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sakura-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sakura-pink);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sakura-dark);
+}
+
+/* Animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
