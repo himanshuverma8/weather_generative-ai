@@ -77,4 +77,3 @@ The frontend should now be running on `http://localhost:5173`
 - Verify Gemini API key is correct
 - Check backend console for API errors
 - Make sure you have internet connection
-
