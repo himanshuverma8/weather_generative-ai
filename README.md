@@ -2,6 +2,12 @@
 
 A chatbot that combines weather data with generative AI to provide intelligent suggestions. Features Japanese voice input, weather retrieval, and AI-powered recommendations with a beautiful Japanese-themed UI.
 
+## Preview
+
+![Chat Interface](https://res.cloudinary.com/de5vcnanx/image/upload/v1765443381/Screenshot_2025-12-11_at_2.24.22_PM_fqjagv.png)
+
+![AI Response](https://res.cloudinary.com/de5vcnanx/image/upload/v1765443381/Screenshot_2025-12-11_at_2.24.33_PM_lbdx4q.png)
+
 ## Features
 
 - 🌤️ **Weather Integration**: Real-time weather data from OpenWeatherMap API
