@@ -4,9 +4,9 @@ A chatbot that combines weather data with generative AI to provide intelligent s
 
 ## Preview
 
-![Chat Interface](https://res.cloudinary.com/de5vcnanx/image/upload/v1765443381/Screenshot_2025-12-11_at_2.24.22_PM_fqjagv.png)
+![Chat Interface](https://res.cloudinary.com/de5vcnanx/image/upload/v1765544633/Screenshot_2025-12-11_at_2.24.22_PM_fqjagv_2_vawzln.jpg)
 
-![AI Response](https://res.cloudinary.com/de5vcnanx/image/upload/v1765443381/Screenshot_2025-12-11_at_2.24.33_PM_lbdx4q.png)
+![AI Response](https://res.cloudinary.com/de5vcnanx/image/upload/v1765544616/Screenshot_2025-12-11_at_2.24.33_PM_lbdx4q_3_nl5l1s.jpg)
 
 ## Features
 
