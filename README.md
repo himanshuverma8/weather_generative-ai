@@ -96,7 +96,7 @@ The frontend will run on `http://localhost:5173`
 ## Project Structure
 
 ```
-assignment_jp/
+weather_generative-ai/
 ├── backend/
 │   ├── services/
 │   │   ├── weatherService.js    # OpenWeatherMap API integration
@@ -183,7 +183,5 @@ Generate AI suggestions (standalone).
 
 **Note**: Voice input requires microphone permissions and works best in Chrome/Edge.
 
-## License
 
-This project is created for assignment purposes.
 
